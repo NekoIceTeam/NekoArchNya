@@ -25,5 +25,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build IceLinux 
-        run: chmod +x build.sh
-        run: ./build.sh -v 
+        run: |
+          chmod +x build.sh
+          ./build.sh -v 

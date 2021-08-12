@@ -16,7 +16,7 @@ jobs:
       - name: Build IceLinux 
         run: | 
           sudo chmod +x build.sh
-          sudo ./build.sh -N icelinux -L "AI$(date +%Y%m)" -P "IceLinux <https://github.com/NekoIceCream/IceLinux>" -v
+          sudo ./build.sh -N icelinux -L "AI$(date +%Y%m)" -P "IceLinux <https://github.com/NekoIceTeam/IceLinux>" -v
 ##############################################################################
 #- name: Upload a Build Artifact
 #  uses: actions/upload-artifact@v2.2.4

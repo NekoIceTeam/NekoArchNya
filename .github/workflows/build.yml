@@ -13,16 +13,11 @@ jobs:
 
 #############################################################################
     steps:
-      - name: Starting Runner With Root
-        env:
-          ROOT_PASSWORD: ${{ secrets.root_password }}
-        run: sudo su 
-
       - uses: actions/checkout@v2
       - name: Build IceLinux 
         run: |
           chmod +x build.sh
-          ./build.sh -v 
+          sudo ./build.sh -v 
 
 ##############################################################################
 #- name: Upload a Build Artifact

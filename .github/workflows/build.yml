@@ -13,13 +13,12 @@ jobs:
 
 #############################################################################
     steps:
-      - uses: actions/checkout@v2
       - name: Build IceLinux 
         run: |
           sudo su 
           chmod +x build.sh
           ./build.sh -v 
-
+      - uses: actions/checkout@v2
 ##############################################################################
 #- name: Upload a Build Artifact
 #  uses: actions/upload-artifact@v2.2.4

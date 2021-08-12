@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: archlinux#1
+    runs-on: archlinux
 #############################################################################
     steps:
       - name: Build IceLinux 

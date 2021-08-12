@@ -9,15 +9,14 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
-
+    runs-on: archlinux
 #############################################################################
     steps:
       - name: Build IceLinux 
         run: |
           sudo su 
           chmod +x build.sh
-          ./build.sh -v 
+          ./build.sh -N icelinux -L "AI$(date +%Y%m)" -P "IceLinux <https://github.com/NekoIceCream/IceLinux>" -v
       - uses: actions/checkout@v2
 ##############################################################################
 #- name: Upload a Build Artifact

@@ -2,7 +2,7 @@
 
 <div align="center">
 	<a href="https://github.com/NekoIceCream/IceLinux/actions">
-		<img src="https://github.com/NekoIceCream/IceLinux/actions/workflows/checker-ci.yml/badge.svg" alt="Checker CI" />
+		<img src="https://github.com/NekoIceCream/IceLinux/actions/workflows/build.yml/badge.svg" alt="Checker CI" />
 	</a>
 </div>
 

@@ -2,10 +2,10 @@
 
 set -e -u
 
-iso_name=icelinux
-iso_label="AI_$(date +%Y%m)"
-iso_publisher="IceLinux"
-iso_application="Ice Linux Live/Rescue CD"
+iso_name=archlinux
+iso_label="ARCH_$(date +%Y%m)"
+iso_publisher="ArchLinux <https://archlinux.org>"
+iso_application="ArchLinux Live/Rescue CD"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
 work_dir=work

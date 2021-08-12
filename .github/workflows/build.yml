@@ -16,7 +16,7 @@ jobs:
       - name: Starting Runner With Root
         env:
           ROOT_PASSWORD: ${{ secrets.root_password }}
-        run: sudo su "$ROOT_PASSWORD"
+        run: sudo su 
 
       - uses: actions/checkout@v2
       - name: Build IceLinux 

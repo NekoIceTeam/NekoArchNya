@@ -14,13 +14,12 @@ jobs:
 #############################################################################
     steps:
       - uses: actions/checkout@v2
-
-      - name: Starting With Root
-      - shell: bash
+      - name: Starting Runner With Root
         env:
           ROOT_PASSWORD: ${{ secrets.root_password }}
         run: sudo su "$ROOT_PASSWORD"
 
+      - uses: actions/checkout@v2
       - name: Build IceLinux 
         run: |
           chmod +x build.sh

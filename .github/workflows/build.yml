@@ -1,3 +1,4 @@
+############################################################################
 name: BUILD CI
 
 on:
@@ -8,13 +9,35 @@ on:
 
 jobs:
   build:
-    name: Starting Self Hosted Runner
     runs-on: self-hosted
 
+#############################################################################
     steps:
       - uses: actions/checkout@v2
+
+      - name: Starting With Root
+      - shell: bash
+        env:
+          ROOT_PASSWORD: ${{ secrets.root_password }}
+        run: sudo su "$ROOT_PASSWORD"
 
       - name: Build IceLinux 
         run: |
           chmod +x build.sh
-          sudo ./build.sh -v 
+          ./build.sh -v 
+
+##############################################################################
+#- name: Upload a Build Artifact
+#  uses: actions/upload-artifact@v2.2.4
+#  with:
+#    name: 
+#    path:
+    
+#Available Options:
+#  warn: Output a warning but do not fail the action
+#  error: Fail the action with an error message
+#  ignore: Do not output any warnings or errors, the action does not fail
+
+#    if-no-files-found:
+#    retention-days:
+##############################################################################

@@ -12,12 +12,12 @@ jobs:
     runs-on: archlinux
 #############################################################################
     steps:
+      - uses: actions/checkout@v2
       - name: Build IceLinux 
         run: |
           sudo su 
           chmod +x build.sh
           ./build.sh -N icelinux -L "AI$(date +%Y%m)" -P "IceLinux <https://github.com/NekoIceCream/IceLinux>" -v
-      - uses: actions/checkout@v2
 ##############################################################################
 #- name: Upload a Build Artifact
 #  uses: actions/upload-artifact@v2.2.4

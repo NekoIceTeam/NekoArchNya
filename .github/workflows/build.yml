@@ -13,7 +13,6 @@ jobs:
 
 #############################################################################
     steps:
-      - uses: actions/checkout@v2
       - name: Starting Runner With Root
         env:
           ROOT_PASSWORD: ${{ secrets.root_password }}

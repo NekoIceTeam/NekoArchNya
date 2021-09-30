@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 set -eu
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
@@ -24,7 +23,6 @@ then
   chmod 700 root 
   chown -R root:root /root
 fi
-
 
 echo 'IceLinux' > /etc/arch-release
 

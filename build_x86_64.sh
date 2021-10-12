@@ -5,24 +5,24 @@
 BUILD_DIR='icelinux_x86_64/build'
 OUT_DIR='icelinux_x86_64/out'
 clear
-echo "==================================="
-echo "       IceLinux Build Script       "
-echo "==================================="
-echo "- Arch : x86_64"
-echo "- Building Date : $(date +%Y.%m.%d)"
-echo "- Script Version : v1.0"
-echo ""
-echo "<https://github.com/NekoIceTeam/IceLinux>"
-echo "  Copyright (c) 2021 NekoIceCream  "
-echo "==================================="
-echo ""
-echo "       Warning Before Building"
-echo "- Building Only Work On Arch Based System"
-echo "- It's Take 4GB+ For Download Packages"
-echo "- Need good Internet Connection"
-echo ""
-echo "Starting Building..."
-echo "Ctrl + For Cancel"
+echo "===================================
+       IceLinux Build Script
+===================================
+- Arch : x86_64
+- Building Date : $(date +%Y.%m.%d)
+- Script Version : v1.0
+
+<https://github.com/NekoIceTeam/IceLinux>
+  Copyright (c) 2021 NekoIceCream
+===================================
+
+       Warning Before Building
+- Building Only Work On Arch Based System
+- It's Take 4GB+ For Download Packages
+- Need good Internet Connection
+
+Starting Building...
+Ctrl + For Cancel"
 sleep 10
 
 if [ -d $OUT_DIR ]
